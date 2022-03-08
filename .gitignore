@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+#result files
+
+processor*
+*.gz
+uniform/
+log.*
+.gitignore

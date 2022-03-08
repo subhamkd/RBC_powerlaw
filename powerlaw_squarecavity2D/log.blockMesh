@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-3bcbaf946ae9
+Exec   : blockMesh
+Date   : Mar 07 2022
+Time   : 17:27:49
+Host   : "subham-Precision-7920-Tower"
+PID    : 63609
+I/O    : uncollated
+Case   : /home/subham/Desktop/work/FOSSEE_migration/RBC_powerlaw/powerlaw_squarecavity2D
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/home/subham/Desktop/work/FOSSEE_migration/RBC_powerlaw/powerlaw_squarecavity2D/system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0114587 .. 0.0114587
+        j : 0.00460638 .. 0.00460638
+        k : 1
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (1 1 1)
+  nPoints: 8282
+  nCells: 4000
+  nFaces: 16140
+  nInternalFaces: 7860
+----------------
+Patches
+----------------
+  patch 0 (start: 7860 size: 40) name: down
+  patch 1 (start: 7900 size: 40) name: top
+  patch 2 (start: 7940 size: 100) name: left
+  patch 3 (start: 8040 size: 100) name: right
+  patch 4 (start: 8140 size: 8000) name: frontAndBack
+
+End
+
