@@ -35,6 +35,8 @@
 
 processor*
 *.gz
-uniform/
+uniform
 log.*
+
+
 .gitignore
