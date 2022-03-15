@@ -9,3 +9,6 @@ of power-law ﬂuids in cylindrical and annular enclosures](https://www.scienced
 
 
 For details on the model and numerical implementation check out the references listed above.
+
+- The .stl files used for creation of the mesh is present in the ___triSurface___ folder inside the constant directory
+- The mesh was created using _blockMeshDict_,_surfaceFeatureExtractDict_ and _snappyHexMeshDict_
