@@ -1,2 +1,2 @@
 ### Note
-All files are for Prandtl number = 7
+All cases are for Prandtl number = 7
