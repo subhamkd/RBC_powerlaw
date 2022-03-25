@@ -7,37 +7,18 @@
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
-    version         2;
-    format          ascii;
-    class           dictionary;
-    object          decomposeParDict;
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      meshQualityDict;
 }
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-numberOfSubdomains 16;
+// Include defaults parameters from master dictionary
+#includeEtc "caseDicts/mesh/generation/meshQualityDict"
 
-method          scotch;
-
-simpleCoeffs
-{
-    n               ( 1 2 1 );
-    delta           0.001;
-}
-
-hierarchicalCoeffs
-{
-    n               ( 1 1 1 );
-    delta           0.001;
-    order           xyz;
-}
-
-manualCoeffs
-{
-    dataFile        "";
-}
-
-distributed     no;
-
-roots           ( );
+//- minFaceWeight (0 -> 0.5)
+minFaceWeight 0.02;
 
 
 // ************************************************************************* //
