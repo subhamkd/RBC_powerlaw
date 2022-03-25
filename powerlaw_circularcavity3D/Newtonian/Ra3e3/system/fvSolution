@@ -50,13 +50,22 @@ SIMPLE
 
     residualControl
     {
-        
+        p_rgh               1e-5;
+        U                   1e-5;
+        T                   1e-5;
     }
 }
 
 relaxationFactors
 {
-    
+    fields
+    {
+        p               0.3;
+    }
+    equations
+    {
+        U               0.7;
+    }
 }
 
 // ************************************************************************* //
